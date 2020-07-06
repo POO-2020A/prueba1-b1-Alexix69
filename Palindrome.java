@@ -18,18 +18,18 @@ class Palindrome {
     System.out.print("In:");
     String s = inp.nextLine();
    	//write your code below
-    String[] palindromo = s.split("");
-    boolean print = true;
-    int j=palindromo.length-1;
-      for (int i = 0; i < palindromo.length; i++) {
-          System.out.println(palindromo[i]+" "+palindromo[j]);
-          if (!palindromo[i].equals(palindromo[j])) {
-              print=false;
+    String[] palindrome = s.split("");
+    boolean value = true;
+    int j = palindrome.length-1;
+      for (int i = 0; i < palindrome.length; i++) {
+          System.out.println(palindrome[i]+" "+palindrome[j]);
+          if (!palindrome[i].equals(palindrome[j])) {
+              value = false;
               break;
           }
           j--;
       }
-      System.out.println(print);
+      System.out.println(value);
    
    	
   }
