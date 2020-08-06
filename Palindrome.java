@@ -22,14 +22,14 @@ class Palindrome {
     boolean value = true;
     int j = palindrome.length-1;
       for (int i = 0; i < palindrome.length; i++) {
-          System.out.println(palindrome[i]+" "+palindrome[j]);
+          //System.out.println(palindrome[i]+" "+palindrome[j]);
           if (!palindrome[i].equals(palindrome[j])) {
               value = false;
               break;
           }
           j--;
       }
-      System.out.println(value);
+      System.out.print(value);
    
    	
   }
